@@ -1,0 +1,35 @@
+body {
+  background-image: url("../assets/img/GradienteDekstop.png");
+  position: relative;
+  & #campoTexto {
+    position: absolute;
+    margin-top: 176px;
+    @media (min-width: 470px) {
+      margin-top: 160px;
+    }
+    & .textoBoasVindas {
+      margin: 10px;
+      text-shadow: 0.1em 0.1em 0.1em #a8a69f;
+      @media (min-width: 470px) {
+        font-size: 45px;
+        & .bemVindo {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  & .logohcode {
+    margin-top: 81px;
+    width: 157px;
+    @media (min-width: 470px) {
+      width: 300px;
+      margin-top: 60px;
+    }
+  }
+}
+.bemVindo {
+  @media (min-width: 470px) {
+    font-size: 45px;
+    color: var(--primary-color);
+  }
+}
